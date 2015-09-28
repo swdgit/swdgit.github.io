@@ -757,6 +757,42 @@ footer a:hover {
   color: #444;
 }
 
+/** MENU */
+
+#menu {
+  position: relative;
+  height: 50px;
+  margin: 0px auto;
+  background: transparent;
+}
+
+#menu ul {
+  margin: 0px 0px 0px 50px;
+  padding: 0px;
+  list-style: none;
+}
+
+#menu li {
+  display: inline;
+}
+
+#menu a {
+  display: block;
+  float: left;
+  background: #9ddcff;
+  margin-top: 10px;
+  margin-right: 3px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+#menu a:hover {
+  color: #FFFFFF;
+}
+
 /* MISC */
 .clearfix:after {
   display: block;
