@@ -11,10 +11,11 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
   <link rel="stylesheet" type="text/css" href="stylesheets/octicons.css" media="screen">
+  
   <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
-  
+
   <title>Proto Lounge.</title>
 </head>
 
@@ -24,13 +25,28 @@
    <h1>Proto Lounge</h1>
    <h2>A place to make and learn about on demand manufacturing.</h2>
    <a href="https://github.com/swdgit" class="button"><small>Follow me on</small> GitHub</a>
-    <div id="menu">
+    <div>
+    <div id="menu" style="float: left;">
       <ul>
         <li><a href="http://blog.proto-lounge.com">Blog</a></li>
         <li><a href="http://3dprint.proto-lounge.com">3D Prints</a></li>
         <li><a href="https://www.3dhubs.com/denver/hubs/proto-lounge">3D Hubs</a></li>
       </ul>
     </div>
+    <div style="float: right;">
+      <a href="https://twitter.com/deck_tweet" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @deck_tweet</a>
+      <script>
+        !function(d,s,id) { 
+          var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+          if(!d.getElementById(id)) { 
+              js=d.createElement(s);
+              js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+              fjs.parentNode.insertBefore(js,fjs);
+          }
+        } (document, 'script', 'twitter-wjs');
+      </script>
+    </div>    
+  </div>
   </div>
  </header>
 
@@ -49,10 +65,20 @@
 
      <p>Proto Lounge is active on <a href="https://www.3dhubs.com/denver/hubs/proto-lounge">3D Hubs</a> If you need a print or would like 
      to learn more drop me a note.</p>
+     
 
    </section>
 
    <aside id="sidebar">
+     <div>
+        <a class="button" href="https://www.3dhubs.com/denver/hubs/proto-lounge/3dprint"
+           data-3dhubs-widget="button" 
+           data-hub-id="84954" 
+           data-type="orderWidget" 
+           data-color="green" 
+           data-size="small" 
+           data-text="Order a 3D Print">Order a 3D Print</a>
+     </div>
    </aside>
   </div>
  </div>
@@ -73,6 +99,13 @@
   ga('create', 'UA-3737813-3', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+  function(a,b,c,d) {
+    var e,g=(a.getElementsByTagName(b)[0],/^http:/.test(a.location)?"http":"https");
+    a.getElementById(d) || (e=a.createElement(b),e.id=d,e.src=g+"://d3d4ig4df637nj.cloudfront.net/w/2.0.js",e.async=!0,a.body.appendChild(e))
+  }
+  (document,"script",1,"h3d-widgets-js");
 </script>
 </body>
 </html>
