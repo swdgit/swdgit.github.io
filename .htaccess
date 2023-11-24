@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^walsenburgcraftemporium\.com$
+RewriteRule (.*) http://www.walsenburgcraftemporium.com/$1 [R=301,L]
+RewriteRule ^$ site/wce/ [L]
