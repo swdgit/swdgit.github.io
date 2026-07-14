@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huerfano County & Walsenburg Web Resources</title>
+<style>
+  :root {
+    --paper: #f6f1e7;
+    --ink: #2e2a24;
+    --rust: #a4482c;
+    --sage: #5f6f52;
+    --line: #d8cdb8;
+    --muted: #6b6252;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+    line-height: 1.55;
+  }
+
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+
+  header {
+    border-bottom: 3px double var(--rust);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  header .eyebrow {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    color: var(--rust);
+    margin: 0 0 0.4rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    margin: 0 0 0.3rem;
+    line-height: 1.2;
+  }
+
+  header p.sub {
+    color: var(--muted);
+    margin: 0;
+    font-size: 0.98rem;
+  }
+
+  #search {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    margin: 1.5rem 0 0;
+    border: 1px solid var(--line);
+    background: #fffdf8;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--ink);
+    border-radius: 2px;
+  }
+  #search:focus { outline: 2px solid var(--rust); outline-offset: 1px; }
+
+  .count {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin: 0.4rem 0 0;
+    font-family: 'Courier New', monospace;
+  }
+
+  h2.cat {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--sage);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.4rem;
+    margin: 2.4rem 0 1rem;
+  }
+
+  .entry {
+    margin-bottom: 1.3rem;
+    padding-left: 0.9rem;
+    border-left: 2px solid var(--line);
+  }
+
+  .entry a {
+    font-weight: 700;
+    color: var(--rust);
+    text-decoration: none;
+    word-break: break-word;
+  }
+  .entry a:hover { text-decoration: underline; }
+
+  .entry p {
+    margin: 0.25rem 0 0;
+    font-size: 0.95rem;
+    color: #45403a;
+  }
+
+  .entry.hidden { display: none; }
+  h2.cat.hidden { display: none; }
+
+  .notes {
+    margin-top: 3rem;
+    padding: 1.4rem 1.5rem;
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+  }
+
+  .notes h2 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--sage);
+    margin: 0 0 0.8rem;
+  }
+
+  .notes ul { margin: 0; padding-left: 1.1rem; }
+  .notes li { margin-bottom: 0.6rem; font-size: 0.93rem; }
+  .notes li:last-child { margin-bottom: 0; }
+
+  footer {
+    margin-top: 3rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-align: center;
+    font-family: 'Courier New', monospace;
+  }
+
+  @media (max-width: 500px) {
+    .wrap { padding: 2rem 1.1rem 3rem; }
+    h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Spanish Peaks Country · Huerfano County, Colorado</p>
+    <h1>Events, Dining &amp; Recreation Web Resources</h1>
+    <p class="sub">A working reference for Walsenburg and the surrounding county — tourism, civic, dining, and public-lands sites in one place.</p>
+    <input type="text" id="search" placeholder="Filter by keyword (e.g. hunting, restaurant, calendar)…">
+    <p class="count" id="count"></p>
+  </header>
+
+  <div id="list">
+
+    <h2 class="cat">Tourism &amp; Regional Overview</h2>
+
+    <div class="entry">
+      <a href="https://spanishpeakscountry.com" target="_blank" rel="noopener">spanishpeakscountry.com</a>
+      <p>Official Huerfano County Tourism Board site. Countywide hub for lodging, dining, activities, attractions, and an events calendar.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.colorado.com" target="_blank" rel="noopener">colorado.com</a> <em>(Spanish Peaks Country section)</em>
+      <p>State tourism site with seasonal feature articles on the region.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.uncovercolorado.com/towns/walsenburg/" target="_blank" rel="noopener">uncovercolorado.com/towns/walsenburg</a>
+      <p>Town overview with annual event highlights and attractions.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.uncovercolorado.com/towns/la-veta/" target="_blank" rel="noopener">uncovercolorado.com/towns/la-veta</a>
+      <p>Same format, focused on La Veta's events and history.</p>
+    </div>
+
+    <h2 class="cat">Local Government &amp; Civic</h2>
+
+    <div class="entry">
+      <a href="https://www.walsenburg.org" target="_blank" rel="noopener">walsenburg.org</a>
+      <p>Official City of Walsenburg site. News, public notices, community announcements.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.huerfano.us" target="_blank" rel="noopener">huerfano.us</a>
+      <p>Huerfano County government site, with a built-in events calendar at huerfano.us/events.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.huerfano.us/code-of-the-west" target="_blank" rel="noopener">huerfano.us/code-of-the-west</a>
+      <p>County's rural-living disclosure document. Covers well permits, road maintenance responsibility, mineral rights severance, utility access, and emergency response times. Background reference for land-use questions, not an events resource.</p>
+    </div>
+    <div class="entry">
+      <a href="https://huerfanoco.portal.civicclerk.com" target="_blank" rel="noopener">huerfanoco.portal.civicclerk.com</a>
+      <p>County meeting agendas and public notices.</p>
+    </div>
+
+    <h2 class="cat">Downtown &amp; Main Street</h2>
+
+    <div class="entry">
+      <a href="https://www.downtownwalsenburg.org" target="_blank" rel="noopener">downtownwalsenburg.org</a>
+      <p>Walsenburg Downtown Revitalization Committee (WDRC), a volunteer-run 501(c)(3). Site covers four standing events plus a calendar and shop:</p>
+      <ul style="margin: 0.6rem 0 0; padding-left: 1.2rem; font-size: 0.95rem; color: #45403a;">
+        <li style="margin-bottom: 0.5rem;"><strong>Farmer's Market ("Make It Rain")</strong> — Sundays, 12 noon to 2 p.m. at Heritage Park. Fresh vegetables and plant starts, weekly through September.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Porchfest</strong> — WDRC's biggest event, held annually on the Saturday of Memorial Day weekend. A town-wide yard sale and block party format combined with live music and new mural unveilings, with a merch stand at Miner's Plaza benefiting WDRC directly.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>FAR OUT Murals</strong> — the town's ongoing mural program, launched in 2020 by local artist Yul Jorgensen and WDRC founder Aubrey Lykins, originally in partnership with Meow Wolf (Denver). New murals are typically unveiled each year around Porchfest weekend.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Mountain Mining Days (MMD)</strong> — Walsenburg's annual heritage festival, held on the first Saturday of September. Opens with a Main Street parade, followed by a street fair with food trucks, vendors, live music, and kids' activities.</li>
+        <li><strong>Calendar</strong> — a community-submission calendar (separate from the flagship events above), restricted to events within Walsenburg city limits; events elsewhere in the county are directed to Spanish Peaks Country's tourism calendar instead.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <a href="https://www.wheelhouseincubator.org" target="_blank" rel="noopener">wheelhouseincubator.org</a>
+      <p>Wheelhouse Retail Incubator. Business development news, including its Hands-On at the Wheelhouse maker series.</p>
+    </div>
+
+    <h2 class="cat">Parks &amp; Outdoor Recreation (County &amp; Regional)</h2>
+
+    <div class="entry">
+      <a href="https://huerfanoprd.colorado.gov" target="_blank" rel="noopener">huerfanoprd.colorado.gov</a>
+      <p>Huerfano Parks and Recreation District. Covers Cuchara Mountain Park and Walsenburg Wild Waters water park.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.cucharamountainpark.org" target="_blank" rel="noopener">cucharamountainpark.org</a>
+      <p>Cuchara Mountain Park, a nearly 50-acre county-owned park at the base of the former Panadero Ski Resort, operated by the nonprofit Panadero Ski Corporation. Free to enter, with activities offered year-round:</p>
+      <p style="margin-top: 0.7rem;"><strong>Winter</strong></p>
+      <ul style="margin: 0.3rem 0 0; padding-left: 1.2rem; font-size: 0.95rem; color: #45403a;">
+        <li style="margin-bottom: 0.4rem;">Lift-served downhill skiing and snowboarding on Chair 4, with beginner and intermediate runs and a terrain park; kids ski free with an adult pass purchase.</li>
+        <li style="margin-bottom: 0.4rem;">Backcountry skiing and ski touring under a free "earn your turns" uphill access policy, covering all park trails plus 230 adjacent acres of USFS land.</li>
+        <li style="margin-bottom: 0.4rem;">Cross-country skiing on the groomed Lower Baker Creek Trail loop.</li>
+        <li style="margin-bottom: 0.4rem;">Snowshoeing along Lower Baker Creek and the Baker Creek Connector Trail, or up the Service Road to the Chair 3 summit.</li>
+        <li>Sledding and general snow play, restricted to a designated Snow Play Area (a signed waiver is required; sledding is never permitted on ski runs).</li>
+      </ul>
+      <p style="margin-top: 0.7rem;"><strong>Summer</strong></p>
+      <ul style="margin: 0.3rem 0 0; padding-left: 1.2rem; font-size: 0.95rem; color: #45403a;">
+        <li style="margin-bottom: 0.4rem;">18-hole disc golf course ($5 pass), with a steep front nine through the upper park and a technical back nine along the Lower Baker Creek trail.</li>
+        <li style="margin-bottom: 0.4rem;">Hiking on the Lower Baker Creek Trail, the Baker Creek Connector Trail, and other high-mountain routes.</li>
+        <li style="margin-bottom: 0.4rem;">Mountain biking, with new singletrack under active development by the Cuchara Mountain Trails Alliance via an IMBA Trail Accelerator Grant.</li>
+        <li>Miniature golf course.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <a href="https://www.cucharafoundation.org" target="_blank" rel="noopener">cucharafoundation.org</a>
+      <p>Cuchara Village community info.</p>
+    </div>
+
+    <h2 class="cat">State Parks</h2>
+
+    <div class="entry">
+      <a href="https://cpw.state.co.us/state-parks/lathrop-state-park" target="_blank" rel="noopener">cpw.state.co.us/state-parks/lathrop-state-park</a>
+      <p>Colorado Parks and Wildlife's official Lathrop State Park page. Covers Martin and Horseshoe Lakes, the swim beach, boating, the on-site Walsenburg Golf Course, camping, and fire restriction notices. Sub-pages: <em>lathrop-state-park-camping-lodging</em> (reservations via cpwshop.com) and <em>lathrop-state-park-activities-trails</em> (Hogback and Cuerno Verde Trails).</p>
+    </div>
+
+    <h2 class="cat">State Trust Lands for Hunting</h2>
+
+    <div class="entry">
+      <a href="https://cpw.state.co.us/stl-finder" target="_blank" rel="noopener">cpw.state.co.us/stl-finder</a>
+      <p>State Trust Land Finder tool. Covers the Hunting and Fishing Access Program (HFAP), a lease between the State Land Board and Colorado Parks and Wildlife covering roughly 973,000 acres statewide. Use this to check whether a specific parcel is open to public hunting.</p>
+    </div>
+    <div class="entry">
+      <a href="https://slb.colorado.gov/public-access" target="_blank" rel="noopener">slb.colorado.gov/public-access</a>
+      <p>Colorado State Land Board's public access page. Explains the trust land structure, links to the Colorado Hunting Atlas, and details HFAP lease terms from the landowner side.</p>
+    </div>
+
+    <h2 class="cat">Federal Lands (Blue Lake, Bear Lake, Cuchara River Recreation Area)</h2>
+
+    <div class="entry">
+      <a href="https://www.fs.usda.gov/r02/psicc" target="_blank" rel="noopener">fs.usda.gov/r02/psicc</a>
+      <p>Home page for the Pike-San Isabel National Forests &amp; Cimarron and Comanche National Grasslands, the U.S. Forest Service unit managing this land. Some older content is still migrating after an April 2025 platform change.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.fs.usda.gov/r02/psicc/recreation/blue-lake-campground" target="_blank" rel="noopener">fs.usda.gov/r02/psicc/recreation/blue-lake-campground</a>
+      <p>Official Blue Lake Campground page. First-come, first-served, open late May through late September, with trail access to the North Fork Trail and Indian Trail system.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.fs.usda.gov/r02/psicc/recreation/cuchara-day-use-picnic-area" target="_blank" rel="noopener">fs.usda.gov/r02/psicc/recreation/cuchara-day-use-picnic-area</a>
+      <p>Cuchara Day Use Picnic Area, accessed via Forest System Road 422 off Highway 12 south of La Veta.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.recreation.gov" target="_blank" rel="noopener">recreation.gov</a>
+      <p>Federal reservation system. Search "Bear Lake Campground CO PSICC" for the booking listing.</p>
+    </div>
+
+    <h2 class="cat">News &amp; Community Happenings</h2>
+
+    <div class="entry">
+      <a href="https://www.worldjournalnewspaper.com" target="_blank" rel="noopener">worldjournalnewspaper.com</a>
+      <p>The World Journal, the local paper. Its Upcoming Events page carries granular listings (community breakfasts, historical society outings, meetings) not found on tourism sites.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.huerfanohistory.org" target="_blank" rel="noopener">huerfanohistory.org</a>
+      <p>Huerfano County Historical Society. Heritage tours and historical events.</p>
+    </div>
+
+    <h2 class="cat">Real Estate Sites with Dining &amp; Event Directories</h2>
+
+    <div class="entry">
+      <a href="https://www.discoverbachman.com/community-calendar/" target="_blank" rel="noopener">discoverbachman.com/community-calendar</a>
+      <p>Bachman &amp; Associates community calendar. Updated monthly, weekly email available. Covers farmers markets, live music lineups, the Francisco Center for the Performing Arts schedule, fitness classes, library programs, and one-off events. Most current, granular calendar available.</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.discoverbachman.com/restaurant-list/" target="_blank" rel="noopener">discoverbachman.com/restaurant-list</a>
+      <p>Bachman restaurant directory by town. La Veta: Aly's Restaurant, Charlie's Market, Grandote Peaks Grill, La Veta Mercantile, Legends on Main, Mountain Merman Brewing, Skinny's Diner &amp; Bar, Stiano Italian Trattoria. Cuchara: Cuchara Yacht Club, The Dog Bar &amp; Grill, Lokal Perks, Cuchara Mountain Mercantile. Walsenburg: Crafty Canary Brewery, Gub Gub's Pizza, George's Drive Inn, La Plaza Inn, Second Street Bar &amp; Grill, Serendipity Retail &amp; Coffeehouse, TC's Diner, Tina's Family Cafe. Also extends to Trinidad and Stonewall/Weston. Last updated May 2024.</p>
+    </div>
+    <div class="entry">
+      <a href="https://cotwrealestate.com/communities/land-for-sale-in-huerfano-county-colorado/" target="_blank" rel="noopener">cotwrealestate.com/communities/land-for-sale-in-huerfano-county-colorado</a>
+      <p>Code of the West's Huerfano County community guide, functioning as a full town-by-town guide despite the URL. Covers events, attractions, dining, and lodging for La Veta, Walsenburg, Cuchara, Gardner, and Farisita, including Branch Cafe and Corine's Mexican Restaurant, both absent from Bachman's list. Last updated June 2026.</p>
+    </div>
+
+    <h2 class="cat">Outdoor Sports</h2>
+
+    <div class="entry">
+      <a href="https://www.spcycling.org" target="_blank" rel="noopener">spcycling.org</a>
+      <p>Stonewall Century Ride info (August 8, 2026).</p>
+    </div>
+    <div class="entry">
+      <a href="https://www.golfwalsenburg.com" target="_blank" rel="noopener">golfwalsenburg.com</a>
+      <p>Walsenburg Golf Course's own site, run by the course rather than Colorado Parks and Wildlife. A public 9-hole course sharing its entrance with Lathrop State Park, though no state park pass is required to play or eat there. Front tees play 3,110 yards (par 36), back tees 3,285 yards (par 36), women's tees 2,970 yards. Covers hours, cart rentals, the clubhouse bar and grill, mini golf, and the driving range.</p>
+    </div>
+    <div class="entry">
+      <a href="https://playgrandote.com" target="_blank" rel="noopener">playgrandote.com</a>
+      <p>Official site for Grandote Peaks Golf Club in La Veta. An 18-hole Tom Weiskopf/Jay Morrish championship course, opened 1988, playing 7,085 yards at par 72 from the longest tees, with four total tee sets. Public, with a steakhouse, lodge, RV park, events center, and golf simulator. Covers tee times, tournaments, lessons, dining, and lodging.</p>
+    </div>
+    <div class="entry">
+      <a href="https://udisc.com/courses/cuchara-mountain-park-1RxQ" target="_blank" rel="noopener">udisc.com/courses/cuchara-mountain-park</a>
+      <p>UDisc's course listing for the 18-hole disc golf course at Cuchara Mountain Park, established 2020. Free to play, dog-friendly, with restrooms and drinking water on site. Rated 4.3 out of 5 across community reviews; a typical round takes about 2 hours over 2.3 miles, with a moderate difficulty rating and considerable elevation change on the front nine. Also usable to log rounds via the UDisc mobile app.</p>
+    </div>
+
+  </div>
+
+  <footer>Compiled for Walsenburg &amp; Huerfano County reference use</footer>
+
+</div>
+
+<script>
+  const search = document.getElementById('search');
+  const entries = Array.from(document.querySelectorAll('.entry'));
+  const cats = Array.from(document.querySelectorAll('h2.cat'));
+  const count = document.getElementById('count');
+
+  function filter() {
+    const q = search.value.trim().toLowerCase();
+    let visible = 0;
+
+    entries.forEach(entry => {
+      const match = !q || entry.textContent.toLowerCase().includes(q);
+      entry.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+
+    cats.forEach(cat => {
+      let el = cat.nextElementSibling;
+      let anyVisible = false;
+      while (el && !el.classList.contains('cat')) {
+        if (el.classList.contains('entry') && !el.classList.contains('hidden')) anyVisible = true;
+        el = el.nextElementSibling;
+      }
+      cat.classList.toggle('hidden', !anyVisible);
+    });
+
+    count.textContent = q ? `${visible} of ${entries.length} sites match "${q}"` : '';
+  }
+
+  search.addEventListener('input', filter);
+</script>
+
+</body>
+</html>
